@@ -64,12 +64,12 @@ Additional settings are accessible via the gear icon at the top right. For Scree
 - Double Rear FOV: doubles the rear camera's field of view to reduce distortion in reflections.
 - Cone Tracing: enables blurring of reflections based on distance traveled and surface roughness. Particularly evident in the Contact Reflections scene:
 
-<img src=figures/cone_disabled.png width=40%>
-<img src=figures/cone_enabled.png width=40%>
+<img src=figures/cone_disabled.png width=49%>
+<img src=figures/cone_enabled.png width=49%>
 
 For refractions, users can toggle between two methods for computing the second interface. The volume object is approximated with two interfaces: the ray enters through the first, travels within, and exits through the second:
 
-<img src=figures/fig22.png width=50%>
+<img src=figures/fig22.png width=49%>
 
 Below are the two methods, Front/Back Buffer on the left and Depth Peeling on the right:
 
@@ -77,8 +77,8 @@ Below are the two methods, Front/Back Buffer on the left and Depth Peeling on th
 
 The effect on the `Dragon Volume` scene is shown here:
 
-<img src=figures/frontback.png width=40%>
-<img  src=figures/depthpeeling.png width=40%>
+<img src=figures/frontback.png width=49%>
+<img  src=figures/depthpeeling.png width=49%>
 
 When Enable Env Proxy is active, the environment map approximates reflections/refractions if screen space visibility is lacking. This affects both reflections and refractions.
 
@@ -116,8 +116,8 @@ For volumes, the Environment Map shows volume objects refracting only the enviro
 
 GBufferLayer1 and GBufferLayer2 show the first and second interfaces of the volume object (normals shown below):
 
-<img src=figures/normals1.png width=40%>
-<img src=figures/normals2.png width=40%>
+<img src=figures/normals1.png width=49%>
+<img src=figures/normals2.png width=49%>
 
 The Refraction view shows the refraction buffer:
 
