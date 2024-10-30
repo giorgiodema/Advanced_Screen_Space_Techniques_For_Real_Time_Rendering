@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Space Techniques</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item scene">
+                <a href="#">Scene</a>
+                <ul class="dropdown-menu main-dropdown" id="ModelsList">
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#">View</a>
+                <ul class="dropdown-menu main-dropdown">
+                    <li class="dropdown-item" id="ViewModes-SceneLit">
+                        Scene Lit
+                    </li>
+                    <li class="dropdown-item">
+                        Opaque
+                        <ul class="dropdown-menu sub-dropdown">
+                            <li class="dropdown-item" id="ViewModes-OpaqueLit">Lit</li>
+                            <li class="dropdown-item" id="ViewModes-OpaqueGBuffer">GBuffer</li>
+                            <li class="dropdown-item" id="ViewModes-OpaqueReflections">Reflections</li>
+                            <li class="dropdown-item" id="ViewModes-OpaqueReflectionsVisibility">Reflections Visibility</li>
+                            <li class="dropdown-item" id="ViewModes-OpaqueReflectionsUVs">Reflections UVs</li>
+                            <li class="dropdown-item" id="ViewModes-OpaquePointLights">Point Lights</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-item">
+                        Transparent
+                        <ul class="dropdown-menu sub-dropdown">
+                            <li class="dropdown-item" id="ViewModes-TransparentLit">Lit</li>
+                            <li class="dropdown-item" id="ViewModes-TransparentGBuffer">GBuffer</li>
+                            <li class="dropdown-item" id="ViewModes-TransparentReflections">Reflections</li>
+                            <li class="dropdown-item" id="ViewModes-TransparentReflectionsVisibility">Reflections Visibility</li>
+                            <li class="dropdown-item" id="ViewModes-TransparentReflectionsUVs">Reflections UVs</li>
+                            <li class="dropdown-item" id="ViewModes-TransparentPointLights">Point Lights</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-item">
+                        Volume
+                        <ul class="dropdown-menu sub-dropdown">
+                            <li class="dropdown-item" id="ViewModes-VolumeLit">Lit</li>
+                            <li class="dropdown-item" id="ViewModes-VolumeEnv">Environment Map</li>
+                            <li class="dropdown-item" id="ViewModes-VolumeGBufferLayer1">GBuffer Layer 1</li>
+                            <li class="dropdown-item" id="ViewModes-VolumeGBufferLayer2">GBuffer Layer 2</li>
+                            <li class="dropdown-item" id="ViewModes-VolumeRefractions">Refractions</li>
+                            <li class="dropdown-item" id="ViewModes-VolumeRefractionsDistanceTravelled">Refractions Distance Travelled</li>
+                            <li class="dropdown-item" id="ViewModes-VolumeRefractionsVisibility">Refractions Visibility</li>
+                            <li class="dropdown-item" id="ViewModes-VolumeRefractionsUVs">Refractions UVs</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#">Environment Map</a>
+                <ul class="dropdown-menu main-dropdown" id="EnvList">
+                    <li class="dropdown-item" id="EnvList-Forest">Forest</li>
+                    <li class="dropdown-item" id="EnvList-Overcast">Overcast Sky</li>
+                    <li class="dropdown-item" id="EnvList-Terrace">Terrace</li>
+                </ul>
+            </li>
+            <li class="nav-item" id="toggle-stats">
+                <a href="#">Stats</a>
+            </li>
+            <li class="spacer"></li>
+            <li class="settings-button">
+                <button id="SettingsButton" class="settings-button">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- Settings panel that will slide in -->
+    <div id="SettingsPanel" class="settings-panel">
+        <div class="settings-div">
+            <button id="CloseSettingsButton" class="close-button">
+                <i class="fas fa-times"></i> <!-- Font Awesome 'X' icon -->
+            </button>
+            <h2>Settings</h2>
+            <hr>
+            <h3>Screen Space Reflection</h3>
+            <!-- Checkbox for "Enable SSR Rear Camera" -->
+            <div class="setting-option">
+                <input type="checkbox" id="ssr-rear-camera" class="checkbox-input" checked>
+                <label for="ssr-rear-camera" class="checkbox-label">Enable SSR Rear Camera</label>
+            </div>
+            <div class="setting-option">
+                <input type="checkbox" id="ssr-rear-doubleFov" class="checkbox-input" checked>
+                <label for="ssr-rear-doubleFov" class="checkbox-label">Double Rear FOV</label>
+            </div>
+            <div class="setting-option">
+                <input type="checkbox" id="ssr-coneTracing" class="checkbox-input">
+                <label for="ssr-coneTracing" class="checkbox-label">Enable Cone Tracing</label>
+            </div>
+            <h3>Volume Second Layer Algorithm</h3>
+            <div class="setting-option">
+                <input type="radio" id="settings-volumelayer-back" class="radio-input" name="volume-layer" value="false" checked>
+                <label for="settings-volumelayer-back" class="radio-label">Front/Back Buffer</label>
+            </div>
+            <div class="setting-option">
+                <input type="radio" id="settings-volumelayer-peel" class="radio-input" name="volume-layer" value="true">
+                <label for="settings-volumelayer-peel" class="radio-label">Depth Peeling</label>
+            </div>
+            <h3>Environment Map</h3>
+            <input type="checkbox" id="env-proxy" class="checkbox-input">
+            <label for="env-proxy" class="checkbox-label">Enable Env Proxy</label>
+        </div>
+
+    </div>
+    <!-- WebGPU Canvas -->
+    <div class="main-container">
+        <canvas id="glCanvas"></canvas>
+        <div class="stats-container" id="stats-panel">
+            <h2>Statistics</h2>
+            <ul class="stats-list">
+                <li><span>Opaque SSReflection Single Camera UV Pass</span> <span id="OpaqueSSRUV1Cam">0.00</span></li>
+                <hr class="dotted-hr">
+                <li><span>Opaque SSReflection Double Cameras UV Pass</span> <span id="OpaqueSSRUV2Cam">0.00</span></li>
+                <hr class="dotted-hr">
+                <li><span>Opaque GBuffer (Front Camera)</span> <span id="OpaqueGBuffer">0.00</span></li>
+                <hr class="dotted-hr">
+                <li><span>Opaque GBuffer (Rear Camera)</span> <span id="OpaqueGBufferRear">0.00</span></li>
+                <hr class="dotted-hr">
+                <li><span>Volume SSRefraction UV Pass</span> <span id="VolumeRefractionUV">0.00</span></li>
+                <hr class="dotted-hr">
+                <li><span>Opaque Point Light Pass (Front Camera)</span> <span id="OpaquePointLightStats">0.00</span></li>
+                <hr class="dotted-hr">
+                <li><span>Opaque Point Light Pass (Rear Camera)</span> <span id="OpaquePointLightStatsRear">0.00</span></li>
+                <hr class="dotted-hr">
+                <li><span>Total</span> <span id="TotalTime">0.00</span></li>
+
+                
+                <!-- Add more stat pairs as needed -->
+            </ul>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>

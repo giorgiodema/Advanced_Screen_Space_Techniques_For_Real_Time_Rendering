@@ -1,0 +1,503 @@
+{
+	"asset":
+	{
+		"version": "2.0",
+		"generator": "Unreal Engine 5.4.3"
+	},
+	"scene": 0,
+	"accessors": [
+		{
+			"bufferView": 0,
+			"count": 144,
+			"type": "SCALAR",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 1,
+			"count": 54,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [ -0.5, -0.5, -0.5 ],
+			"max": [ 0.5, 0.5, 0.5 ]
+		},
+		{
+			"bufferView": 2,
+			"count": 54,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 3,
+			"count": 54,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 4,
+			"count": 54,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 5,
+			"count": 54,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 6,
+			"count": 299910,
+			"type": "SCALAR",
+			"componentType": 5125
+		},
+		{
+			"bufferView": 7,
+			"count": 72264,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [ 2.25905991, -6.05889988, -1.45348001 ],
+			"max": [ 11.5602999, 9.91331959, 3.88420987 ]
+		},
+		{
+			"bufferView": 8,
+			"count": 72264,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 9,
+			"count": 72264,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 10,
+			"count": 72264,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 11,
+			"count": 72264,
+			"type": "VEC2",
+			"componentType": 5126
+		}
+	],
+	"buffers": [
+		{
+			"uri": "LucyTransparent.bin",
+			"byteLength": 5249592
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 144,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 648,
+			"byteOffset": 144,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 648,
+			"byteOffset": 792,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 864,
+			"byteOffset": 1440,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 432,
+			"byteOffset": 2304,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 432,
+			"byteOffset": 2736,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 1199640,
+			"byteOffset": 3168,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 867168,
+			"byteOffset": 1202808,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 867168,
+			"byteOffset": 2069976,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 1156224,
+			"byteOffset": 2937144,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 578112,
+			"byteOffset": 4093368,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 578112,
+			"byteOffset": 4671480,
+			"target": 34962
+		}
+	],
+	"images": [
+		{
+			"uri": "T_GLTF_MI_CheckerGreen_BaseColor.png"
+		},
+		{
+			"uri": "T_GLTF_MI_CheckerRed_BaseColor.png"
+		}
+	],
+	"materials": [
+		{
+			"name": "MI_SolidWhite",
+			"pbrMetallicRoughness":
+			{
+				"metallicFactor": 0
+			}
+		},
+		{
+			"name": "MI_GLTF_MI_CheckerGreen",
+			"pbrMetallicRoughness":
+			{
+				"baseColorTexture":
+				{
+					"index": 0
+				},
+				"metallicFactor": 0
+			}
+		},
+		{
+			"name": "MI_GLTF_MI_CheckerRed",
+			"pbrMetallicRoughness":
+			{
+				"baseColorTexture":
+				{
+					"index": 1
+				},
+				"metallicFactor": 0
+			}
+		},
+		{
+			"name": "MI_SolidGreen",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [ 0, 1, 0, 1 ],
+				"metallicFactor": 0
+			}
+		},
+		{
+			"name": "M_Solid",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [ 1, 0, 0, 1 ],
+				"metallicFactor": 0
+			}
+		},
+		{
+			"name": "MI_GLTF_Transparent",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [ 0, 0.791297913, 1, 1 ],
+				"metallicFactor": 0,
+				"roughnessFactor": 0
+			},
+			"alphaMode": "BLEND",
+			"extensions":
+			{
+				"KHR_materials_ior":
+				{
+					"ior": 1
+				},
+				"KHR_materials_transmission":
+				{
+					"transmissionFactor": 0.5
+				}
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "Cube",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 0
+				}
+			]
+		},
+		{
+			"name": "Cube",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 1
+				}
+			]
+		},
+		{
+			"name": "Cube",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 2
+				}
+			]
+		},
+		{
+			"name": "Cube",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 3
+				}
+			]
+		},
+		{
+			"name": "Cube",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 4
+				}
+			]
+		},
+		{
+			"name": "lucy",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 7,
+						"NORMAL": 8,
+						"TANGENT": 9,
+						"TEXCOORD_0": 10,
+						"TEXCOORD_1": 11
+					},
+					"indices": 6,
+					"material": 5
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "Brush0"
+		},
+		{
+			"name": "Floor",
+			"scale": [ 3, 0.100000001, 3 ],
+			"mesh": 0
+		},
+		{
+			"name": "Ceiling",
+			"translation": [ 0, 2, 0 ],
+			"scale": [ 3, 0.100000001, 3 ],
+			"mesh": 0
+		},
+		{
+			"name": "Front",
+			"translation": [ 0, 1, 1.5 ],
+			"rotation": [ -0.707106829, -0, -0, 0.707106829 ],
+			"scale": [ 3, 0.100000001, 2 ],
+			"mesh": 1
+		},
+		{
+			"name": "PointLight",
+			"translation": [ 0, 1.5, 0 ],
+			"children": [ 5 ]
+		},
+		{
+			"name": "PointLight",
+			"rotation": [ -0, -0.707106829, 0, 0.707106769 ],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 0
+				}
+			}
+		},
+		{
+			"name": "Rear",
+			"translation": [ 0, 1, -1.5 ],
+			"rotation": [ -0.707106829, -0, -0, 0.707106829 ],
+			"scale": [ 3, 0.100000001, 2 ],
+			"mesh": 2
+		},
+		{
+			"name": "Right",
+			"translation": [ 1.5, 1, 0 ],
+			"rotation": [ -0.5, 0.5, 0.5, 0.5 ],
+			"scale": [ 3, 0.100000001, 2 ],
+			"mesh": 3
+		},
+		{
+			"name": "Left",
+			"translation": [ -1.5, 1, 0 ],
+			"rotation": [ -0.5, 0.5, 0.5, 0.5 ],
+			"scale": [ 3, 0.100000001, 2 ],
+			"mesh": 4
+		},
+		{
+			"name": "lucy",
+			"translation": [ -0.599999964, 0.53471297, 0 ],
+			"scale": [ 0.0799999982, 0.0799999982, 0.0799999982 ],
+			"mesh": 5
+		},
+		{
+			"name": "PointLight2",
+			"translation": [ 0, 1, -1 ],
+			"children": [ 11 ]
+		},
+		{
+			"name": "PointLight2",
+			"rotation": [ -0, -0.707106829, 0, 0.707106769 ],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 1
+				}
+			}
+		},
+		{
+			"name": "PointLight3",
+			"translation": [ 0, 1, 1 ],
+			"children": [ 13 ]
+		},
+		{
+			"name": "PointLight3",
+			"rotation": [ -0, -0.707106829, 0, 0.707106769 ],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 2
+				}
+			}
+		},
+		{
+			"name": "DefaultPhysicsVolume0"
+		},
+		{
+			"name": "AbstractNavData-Default"
+		}
+	],
+	"samplers": [
+		{
+			"minFilter": 9987,
+			"magFilter": 9729
+		}
+	],
+	"scenes": [
+		{
+			"name": "LucyTransparent",
+			"nodes": [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 14, 15 ]
+		}
+	],
+	"textures": [
+		{
+			"name": "T_GLTF_MI_CheckerGreen_BaseColor",
+			"sampler": 0,
+			"source": 0
+		},
+		{
+			"name": "T_GLTF_MI_CheckerRed_BaseColor",
+			"sampler": 0,
+			"source": 1
+		}
+	],
+	"extensions":
+	{
+		"KHR_lights_punctual":
+		{
+			"lights": [
+				{
+					"name": "PointLight",
+					"type": "point",
+					"intensity": 2,
+					"range": 10
+				},
+				{
+					"name": "PointLight2",
+					"type": "point",
+					"range": 10
+				},
+				{
+					"name": "PointLight3",
+					"type": "point",
+					"color": [ 0.5, 0.5, 0.5 ],
+					"range": 10
+				}
+			]
+		}
+	},
+	"extensionsUsed": [
+		"KHR_materials_ior",
+		"KHR_materials_transmission",
+		"KHR_lights_punctual"
+	]
+}

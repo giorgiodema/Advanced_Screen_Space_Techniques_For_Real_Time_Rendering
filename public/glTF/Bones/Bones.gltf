@@ -1,0 +1,283 @@
+{
+	"asset":
+	{
+		"version": "2.0",
+		"generator": "Unreal Engine 5.4.4"
+	},
+	"scene": 0,
+	"accessors": [
+		{
+			"bufferView": 0,
+			"count": 144,
+			"type": "SCALAR",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 1,
+			"count": 54,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [ -0.5, -0.5, -0.5 ],
+			"max": [ 0.5, 0.5, 0.5 ]
+		},
+		{
+			"bufferView": 2,
+			"count": 54,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 3,
+			"count": 54,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 4,
+			"count": 54,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 5,
+			"count": 54,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 6,
+			"count": 76866,
+			"type": "SCALAR",
+			"componentType": 5123
+		},
+		{
+			"bufferView": 7,
+			"count": 26467,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [ -0.030445559, 0.000836300023, -0.14133887 ],
+			"max": [ 0.0304455496, 0.156771272, 0.135815471 ]
+		},
+		{
+			"bufferView": 8,
+			"count": 26467,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 9,
+			"count": 26467,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 10,
+			"count": 26467,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 11,
+			"count": 26467,
+			"type": "VEC2",
+			"componentType": 5126
+		}
+	],
+	"buffers": [
+		{
+			"uri": "Bones.bin",
+			"byteLength": 1639052
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 144,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 648,
+			"byteOffset": 144,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 648,
+			"byteOffset": 792,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 864,
+			"byteOffset": 1440,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 432,
+			"byteOffset": 2304,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 432,
+			"byteOffset": 2736,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 153732,
+			"byteOffset": 3168,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 317604,
+			"byteOffset": 156900,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 317604,
+			"byteOffset": 474504,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 423472,
+			"byteOffset": 792108,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 211736,
+			"byteOffset": 1215580,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 211736,
+			"byteOffset": 1427316,
+			"target": 34962
+		}
+	],
+	"materials": [
+		{
+			"name": "M_MetalR2",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [ 0.215860501, 0.215860501, 0.215860501, 1 ],
+				"roughnessFactor": 0.200000003
+			}
+		},
+		{
+			"name": "lambert1",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [ 0.5, 0.5, 0.5, 1 ],
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "Cube",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 0
+				}
+			]
+		},
+		{
+			"name": "Lion_Skeleton_01",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 7,
+						"NORMAL": 8,
+						"TANGENT": 9,
+						"TEXCOORD_0": 10,
+						"TEXCOORD_1": 11
+					},
+					"indices": 6,
+					"material": 1
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "Brush0"
+		},
+		{
+			"name": "Floor",
+			"scale": [ 5.5, 0.100000001, 5.5 ],
+			"mesh": 0
+		},
+		{
+			"name": "DefaultPhysicsVolume0"
+		},
+		{
+			"name": "AbstractNavData-Default"
+		},
+		{
+			"name": "Lion_Skeleton_01",
+			"translation": [ 0, 0.0466558151, 0 ],
+			"rotation": [ 0, 0.707106829, -0, 0.707106829 ],
+			"scale": [ 4, 4, 4 ],
+			"mesh": 1
+		},
+		{
+			"name": "DirectionalLight",
+			"translation": [ 2.39999986, 1, -0.699999988 ],
+			"rotation": [ 0.390731126, -0.920504868, -4.75440487e-09, 1.12006751e-08 ],
+			"scale": [ 2.5, 2.5, 2.5 ],
+			"children": [ 6 ]
+		},
+		{
+			"name": "DirectionalLight",
+			"rotation": [ -0, -0.707106829, 0, 0.707106769 ],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 0
+				}
+			}
+		}
+	],
+	"scenes": [
+		{
+			"name": "Bones",
+			"nodes": [ 0, 1, 2, 3, 4, 5 ]
+		}
+	],
+	"extensions":
+	{
+		"KHR_lights_punctual":
+		{
+			"lights": [
+				{
+					"name": "DirectionalLight",
+					"type": "directional",
+					"intensity": 10
+				}
+			]
+		}
+	},
+	"extensionsUsed": [
+		"KHR_lights_punctual"
+	]
+}

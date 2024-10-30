@@ -1,0 +1,533 @@
+{
+	"asset":
+	{
+		"version": "2.0",
+		"generator": "Unreal Engine 5.4.3"
+	},
+	"scene": 0,
+	"accessors": [
+		{
+			"bufferView": 0,
+			"count": 36,
+			"type": "SCALAR",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 1,
+			"count": 24,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [ -0.5, 0, -0.5 ],
+			"max": [ 0.5, 1, 0.5 ]
+		},
+		{
+			"bufferView": 2,
+			"count": 24,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 3,
+			"count": 24,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 4,
+			"count": 24,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 5,
+			"count": 9216,
+			"type": "SCALAR",
+			"componentType": 5123
+		},
+		{
+			"bufferView": 6,
+			"count": 1734,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [ -0.5, 0, -0.5 ],
+			"max": [ 0.5, 1, 0.5 ]
+		},
+		{
+			"bufferView": 7,
+			"count": 1734,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 8,
+			"count": 1734,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 9,
+			"count": 1734,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 10,
+			"count": 36,
+			"type": "SCALAR",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 11,
+			"count": 24,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [ -0.5, 0, -0.5 ],
+			"max": [ 0.5, 1, 0.5 ]
+		},
+		{
+			"bufferView": 12,
+			"count": 24,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 13,
+			"count": 24,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 14,
+			"count": 24,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 15,
+			"count": 624,
+			"type": "SCALAR",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 16,
+			"count": 206,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [ -1.19999993, 0, -0.75 ],
+			"max": [ 1.19999993, 1.5999999, 0.75 ]
+		},
+		{
+			"bufferView": 17,
+			"count": 206,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 18,
+			"count": 206,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 19,
+			"count": 206,
+			"type": "VEC2",
+			"componentType": 5126
+		}
+	],
+	"buffers": [
+		{
+			"uri": "PointLights.bin",
+			"byteLength": 114552
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 36,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 288,
+			"byteOffset": 36,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 288,
+			"byteOffset": 324,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 384,
+			"byteOffset": 612,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 192,
+			"byteOffset": 996,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 18432,
+			"byteOffset": 1188,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 20808,
+			"byteOffset": 19620,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 20808,
+			"byteOffset": 40428,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 27744,
+			"byteOffset": 61236,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 13872,
+			"byteOffset": 88980,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 36,
+			"byteOffset": 102852,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 288,
+			"byteOffset": 102888,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 288,
+			"byteOffset": 103176,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 384,
+			"byteOffset": 103464,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 192,
+			"byteOffset": 103848,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 624,
+			"byteOffset": 104040,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 2472,
+			"byteOffset": 104664,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 2472,
+			"byteOffset": 107136,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 3296,
+			"byteOffset": 109608,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 1648,
+			"byteOffset": 112904,
+			"target": 34962
+		}
+	],
+	"materials": [
+		{
+			"name": "MI_Plastic_Inst3",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [ 0.233319998, 0.354167014, 0.329315007, 1 ],
+				"metallicFactor": 0
+			}
+		},
+		{
+			"name": "MI_Plastic_Inst2",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [ 0.354167014, 0, 0.013204, 1 ],
+				"metallicFactor": 0
+			}
+		},
+		{
+			"name": "MI_Metallic_Inst",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [ 0, 0.0122579997, 1, 1 ],
+				"roughnessFactor": 0.3
+			}
+		},
+		{
+			"name": "MI_Plastic_Inst",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [ 0.00288100005, 0.151041999, 0, 1 ],
+				"metallicFactor": 0
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "Floor",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4
+					},
+					"indices": 0,
+					"material": 0
+				}
+			]
+		},
+		{
+			"name": "M_Ball",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 6,
+						"NORMAL": 7,
+						"TANGENT": 8,
+						"TEXCOORD_0": 9
+					},
+					"indices": 5,
+					"material": 1
+				}
+			]
+		},
+		{
+			"name": "M_Wall",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 11,
+						"NORMAL": 12,
+						"TANGENT": 13,
+						"TEXCOORD_0": 14
+					},
+					"indices": 10,
+					"material": 2
+				}
+			]
+		},
+		{
+			"name": "M_Stairs",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 16,
+						"NORMAL": 17,
+						"TANGENT": 18,
+						"TEXCOORD_0": 19
+					},
+					"indices": 15,
+					"material": 3
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "DirectionalLight",
+			"translation": [ -6.0999999, 2.5, -0.899999976 ],
+			"rotation": [ -0.165130123, 0.389022231, -0.354122698, 0.834260821 ],
+			"scale": [ 2.5, 2.5, 2.5 ],
+			"children": [ 1 ]
+		},
+		{
+			"name": "DirectionalLight",
+			"rotation": [ -0, -0.707106829, 0, 0.707106769 ],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 0
+				}
+			}
+		},
+		{
+			"name": "SpotLight",
+			"translation": [ 0.699999988, 1.89999998, -4.19999981 ],
+			"rotation": [ 0.539921045, -0.484923154, 0.682659268, 0.0855050161 ],
+			"children": [ 3 ]
+		},
+		{
+			"name": "SpotLight",
+			"rotation": [ -0, -0.707106829, 0, 0.707106769 ],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 1
+				}
+			}
+		},
+		{
+			"name": "Box2",
+			"scale": [ 12.75, -0.25, 17.75 ],
+			"mesh": 0
+		},
+		{
+			"name": "PointLight",
+			"translation": [ 0.510389745, 0.5, 1.8672334 ],
+			"rotation": [ 0, 0.173648164, -0, 0.984807849 ],
+			"children": [ 6 ]
+		},
+		{
+			"name": "PointLight",
+			"rotation": [ -0, -0.707106829, 0, 0.707106769 ],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 2
+				}
+			}
+		},
+		{
+			"name": "Sphere",
+			"translation": [ 0.099999994, 0, -0.699999988 ],
+			"mesh": 1
+		},
+		{
+			"name": "Box",
+			"translation": [ 2.5, 0, 0 ],
+			"scale": [ 0.25, 5.75, 7 ],
+			"mesh": 2
+		},
+		{
+			"name": "Stairs",
+			"translation": [ -0.899999976, 0, 2.20000005 ],
+			"rotation": [ -0, -0.42261827, 0, 0.906307817 ],
+			"mesh": 3
+		},
+		{
+			"name": "PointLight2",
+			"translation": [ -6, 2.29999995, 6.5 ],
+			"children": [ 11 ]
+		},
+		{
+			"name": "PointLight2",
+			"rotation": [ -0, -0.707106829, 0, 0.707106769 ],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 3
+				}
+			}
+		},
+		{
+			"name": "SpotLight2",
+			"translation": [ 2.89999986, 3.39999986, -6.29999971 ],
+			"rotation": [ 7.84822745e-17, -7.84822745e-17, 0.939692616, -0.342020154 ],
+			"children": [ 13 ]
+		},
+		{
+			"name": "SpotLight2",
+			"rotation": [ -0, -0.707106829, 0, 0.707106769 ],
+			"extensions":
+			{
+				"KHR_lights_punctual":
+				{
+					"light": 4
+				}
+			}
+		}
+	],
+	"scenes": [
+		{
+			"name": "LightTests",
+			"nodes": [ 0, 2, 4, 5, 7, 8, 9, 10, 12 ]
+		}
+	],
+	"extensions":
+	{
+		"KHR_lights_punctual":
+		{
+			"lights": [
+				{
+					"name": "DirectionalLight",
+					"type": "directional",
+					"color": [ 0.5, 0.5, 0.5 ]
+				},
+				{
+					"name": "SpotLight",
+					"type": "spot",
+					"color": [ 1, 0, 0.896269262 ],
+					"intensity": 100,
+					"range": 10,
+					"spot":
+					{
+						"outerConeAngle": 0.767944872
+					}
+				},
+				{
+					"name": "PointLight",
+					"type": "point",
+					"color": [ 1, 0.0742135569, 0 ],
+					"intensity": 8,
+					"range": 10
+				},
+				{
+					"name": "PointLight2",
+					"type": "point",
+					"color": [ 0, 1, 0.0497065671 ],
+					"intensity": 20,
+					"range": 10
+				},
+				{
+					"name": "SpotLight2",
+					"type": "spot",
+					"color": [ 0.0497065671, 1, 0 ],
+					"intensity": 20,
+					"range": 10,
+					"spot":
+					{
+						"innerConeAngle": 0.52359879,
+						"outerConeAngle": 0.785398185
+					}
+				}
+			]
+		}
+	},
+	"extensionsUsed": [
+		"KHR_lights_punctual"
+	]
+}

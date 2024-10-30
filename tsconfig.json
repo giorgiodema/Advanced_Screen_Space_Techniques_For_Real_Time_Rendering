@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "types": ["@webgpu/types"],
+      "lib": ["DOM","ES2015"],
+      "strict": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "sourceMap": true,  // To enable debugging of TypeScript code in the browser 
+                          // where you can see the corresponding lines in the TypeScript file
+    },
+    "include": ["src/**/*"]
+  }
+  

@@ -1,0 +1,79 @@
+[
+    {
+        "sceneFolder":"/glTF/LucyMetalRough03",
+        "sceneFile":"LucyMetalRough03.gltf",
+        "displayName":"Lucy Glossy Metal"
+    },
+    {
+        "sceneFolder":"/glTF/LucyMetal",
+        "sceneFile":"LucyMetal.gltf",
+        "displayName":"Lucy Metal"
+    },
+    {
+        "sceneFolder":"/glTF/LucyDielectric",
+        "sceneFile":"LucyDielectric.gltf",
+        "displayName":"Lucy Dielectric"
+    },
+    {
+        "sceneFolder":"/glTF/LucyDielectricRough03",
+        "sceneFile":"LucyDielectricRough03.gltf",
+        "displayName":"Lucy Glossy Dielectric"
+    },
+    {
+        "sceneFolder":"/glTF/LucyTransparent",
+        "sceneFile":"LucyTransparent.gltf",
+        "displayName":"Lucy Transparent"
+    },
+    {
+        "sceneFolder":"/glTF/LucyTransparentRough03",
+        "sceneFile":"LucyTransparentRough03.gltf",
+        "displayName":"Lucy Glossy Transparent"
+    },
+    {
+        "sceneFolder":"/glTF/LucyVolume",
+        "sceneFile":"LucyVolume.gltf",
+        "displayName":"Lucy Volume"
+    },
+    {
+        "sceneFolder":"/glTF/LucyVolumeRough03",
+        "sceneFile":"LucyVolumeRough03.gltf",
+        "displayName":"Lucy Glossy Volume"
+    },
+
+    {
+        "sceneFolder":"/glTF/DragonAttenuation/glTF",
+        "sceneFile":"DragonAttenuation.gltf",
+        "displayName":"Dragon Volume"
+    },
+    {
+        "sceneFolder":"/glTF/DragonAttenuationRough03/glTF",
+        "sceneFile":"DragonAttenuationRough03.gltf",
+        "displayName":"Dragon Glossy Volume"
+    },
+    {
+        "sceneFolder":"/glTF/ArmadilloTransparent",
+        "sceneFile":"ArmadilloTransparent.gltf",
+        "displayName":"Armadillo Transparent"
+    },
+    {
+        "sceneFolder":"/glTF/ArmadilloVolume",
+        "sceneFile":"ArmadilloVolume.gltf",
+        "displayName":"Armadillo Volume"
+    },
+
+    {
+        "sceneFolder":"/glTF/PointLights",
+        "sceneFile":"PointLights.gltf",
+        "displayName":"Point Lights"
+    },
+    {
+        "sceneFolder":"/glTF/refractionTest",
+        "sceneFile":"refraction_test.gltf",
+        "displayName":"Refraction Test"
+    },
+    {
+        "sceneFolder":"/glTF/Bones",
+        "sceneFile":"Bones.gltf",
+        "displayName":"Contact Reflections"
+    }
+]
