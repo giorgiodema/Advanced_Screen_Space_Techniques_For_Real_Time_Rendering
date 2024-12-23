@@ -1,7 +1,7 @@
 
 # Advanced Screen Space Techniques for Real-Time Rendering
 
-This repository contains the code accompanying my PhD thesis, which presents novel extensions to Screen Space Ray Tracing (SSRT) for real-time rendering, focusing on reflections and refractions. Traditional screen space techniques, such as Screen Space Reflections (SSR), face limitations when handling objects outside the camera’s view or those occluded by other geometry. To address these challenges, a Two-Camera SSR method is proposed, using a secondary camera to capture reflections from off-screen objec...
+This repository contains the code accompanying my PhD thesis, which presents novel extensions to Screen Space Ray Tracing (SSRT) for real-time rendering, focusing on reflections and refractions. Traditional screen space techniques, such as Screen Space Reflections (SSR), face limitations when handling objects outside the camera’s view or those occluded by other geometry. To address these challenges, a Two-Camera SSR method is proposed, using a secondary camera to capture reflections from off-screen objects,  and in particular those that are behind the camera. The other solution proposed is a fast Screen Space Refraction algorithm, that produces plausible results using limited resources.
 
 This repository implements a complete real-time renderer designed to showcase these novel techniques. The renderer was developed entirely from scratch using WebGPU, a modern JavaScript graphics API offering low-level GPU access comparable to Vulkan and Direct3D, all within a web-based environment, without external dependencies.
 
